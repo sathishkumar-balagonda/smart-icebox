@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>History</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="screen">
+    <h1 class="title">Icebox History</h1>
+
+	<table class="history-table">
+	    <thead>
+	        <tr>
+	            <th>Date</th>
+	            <th>Time</th>
+	            <th>Temp (°C)</th>
+	            <th>Humidity</th>
+	            <th>Door</th>
+	            <th>Status</th>
+	        </tr>
+	    </thead>
+	    <tbody id="historyBody">
+	        <!-- rows added by JS -->
+	    </tbody>
+	</table>
+
+
+    <button class="history-btn" onclick="goBack()">⬅ Back</button>
+</div>
+
+<script src="history.js"></script>
+</body>
+</html>

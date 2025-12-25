@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Icebox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+<div class="screen">
+    <h1 class="title">Smart Icebox</h1>
+
+    <!-- Temperature Card -->
+    <div class="card">
+        <p class="label">Current Temperature</p>
+        <p class="big-value" id="tempValue">🌡 -- °C</p>
+    </div>
+
+    <!-- Safety Status Card -->
+    <div class="card" id="safetyCard">
+        <p class="label">Safety Status</p>
+        <p class="big-value" id="safetyText">--</p>
+        <p class="sub" id="safetyMsg">--</p>
+    </div>
+
+    <!-- Door Status Card -->
+    <div class="card">
+        <p class="label">Door Status</p>
+        <p class="big-value" id="doorText">--</p>
+        <p class="warning" id="doorAlert" style="display:none;">
+            ⏰ Door open too long! Close soon.
+        </p>
+    </div>
+
+    <!-- History Button -->
+	<button class="history-btn" onclick="goHistory()">
+	    📘 History
+	</button>
+
+
+    <!-- Cloud Status -->
+    <div class="cloud-card" id="cloudStatus">
+        ☁ Cloud Status: <b>--</b>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

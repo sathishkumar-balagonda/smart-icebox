@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #1e3c72, #2a5298);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen {
+    width: 90%;
+    max-width: 380px;
+    text-align: center;
+}
+
+.title {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 18px;
+    margin-bottom: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.label {
+    font-size: 14px;
+    color: #666;
+}
+
+.big-value {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1e3c72;
+    margin: 8px 0;
+}
+
+.sub {
+    font-size: 13px;
+    color: #888;
+}
+
+/* Safety status */
+.safe {
+    background: #8fd19e;
+    color: white;
+}
+
+.safe .big-value,
+.safe .label,
+.safe .sub {
+    color: white;
+}
+
+/* Door warning */
+.warning {
+    font-size: 13px;
+    color: #b36b00;
+}
+
+/* History button */
+.history-btn {
+    width: 100%;
+    padding: 14px;
+    border-radius: 16px;
+    border: none;
+    font-size: 16px;
+    background: #6fa0dc;
+    color: white;
+    margin: 15px 0;
+}
+
+/* Cloud status */
+.cloud-card {
+    background: #e6e6e6;
+    border-radius: 14px;
+    padding: 12px;
+    font-size: 14px;
+}
+
+.history-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: #000;
+}
+
+.history-table th,
+.history-table td {
+    padding: 10px;
+    text-align: center;
+    background: #ffffff;
+}
+
+.history-table th {
+    background: #2f5fa7;
+    color: white;
+}
+
+.history-table tr:nth-child(even) td {
+    background: #f2f6ff;
+}
+
+.safe-text {
+    color: green;
+    font-weight: bold;
+}
+
+.unsafe-text {
+    color: red;
+    font-weight: bold;
+}
