@@ -1,9 +1,5 @@
-
-
 services:
   - type: web
     name: smart-icebox-backend
-    runtime: docker
+    env: docker
     plan: free
-^x
-
