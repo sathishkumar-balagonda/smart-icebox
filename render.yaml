@@ -1,7 +1,9 @@
+
+
 services:
   - type: web
     name: smart-icebox-backend
-    runtime: java
+    runtime: docker
     plan: free
-    buildCommand: ./mvnw clean package -DskipTests
-    startCommand: java -jar target/*.jar
+^x
+
