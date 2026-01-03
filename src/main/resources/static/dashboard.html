@@ -6,26 +6,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-
 <body>
-
 <div class="screen">
     <h1 class="title">Smart Icebox</h1>
 
-    <!-- Temperature Card -->
+    <!-- Temperature -->
     <div class="card">
         <p class="label">Current Temperature</p>
-        <p class="big-value" id="tempValue">🌡 -- °C</p>
+        <p class="big-value" id="tempValue">-- °C</p>
     </div>
 
-    <!-- Safety Status Card -->
+    <!-- Safety -->
     <div class="card" id="safetyCard">
         <p class="label">Safety Status</p>
         <p class="big-value" id="safetyText">--</p>
         <p class="sub" id="safetyMsg">--</p>
     </div>
 
-    <!-- Door Status Card -->
+    <!-- Door -->
     <div class="card">
         <p class="label">Door Status</p>
         <p class="big-value" id="doorText">--</p>
@@ -34,19 +32,18 @@
         </p>
     </div>
 
-    <!-- History Button -->
-	<button class="history-btn" onclick="goHistory()">
-	    📘 History
-	</button>
+    <button class="history-btn" onclick="goHistory()">📘 History</button>
 
-
-    <!-- Cloud Status -->
     <div class="cloud-card" id="cloudStatus">
-        ☁ Cloud Status: <b>--</b>
+        Cloud: --
     </div>
 </div>
 
-<script src="script.js"></script>
+<!-- 🔊 Alert sound -->
+<audio id="alertSound">
+    <source src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg" type="audio/ogg">
+</audio>
 
+<script src="script.js"></script>
 </body>
 </html>

@@ -8,23 +8,26 @@ body {
     align-items: center;
 }
 
+/* Main container */
 .screen {
     width: 90%;
     max-width: 380px;
     text-align: center;
 }
 
+/* Title */
 .title {
     color: white;
     margin-bottom: 20px;
 }
 
+/* Cards */
 .card {
     background: #ffffff;
     border-radius: 18px;
     padding: 18px;
     margin-bottom: 15px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .label {
@@ -44,15 +47,23 @@ body {
     color: #888;
 }
 
-/* Safety status */
+/* Safety states */
 .safe {
     background: #8fd19e;
     color: white;
 }
 
+.unsafe {
+    background: #f28b82;
+    color: white;
+}
+
 .safe .big-value,
 .safe .label,
-.safe .sub {
+.safe .sub,
+.unsafe .big-value,
+.unsafe .label,
+.unsafe .sub {
     color: white;
 }
 
@@ -72,6 +83,7 @@ body {
     background: #6fa0dc;
     color: white;
     margin: 15px 0;
+    cursor: pointer;
 }
 
 /* Cloud status */
@@ -82,6 +94,7 @@ body {
     font-size: 14px;
 }
 
+/* History table */
 .history-table {
     width: 100%;
     border-collapse: collapse;
@@ -105,6 +118,7 @@ body {
     background: #f2f6ff;
 }
 
+/* Text colors */
 .safe-text {
     color: green;
     font-weight: bold;
